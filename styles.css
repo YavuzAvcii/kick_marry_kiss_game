@@ -1,0 +1,140 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+form,
+h1 {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Tilt Prism", cursive;
+  letter-spacing: 0.1rem;
+  font-size: 400;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+body {
+  background: linear-gradient(45deg, #f7a4a4, #febe8c, #fffbc1, #b6e2a1);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite alternate;
+  font-family: "Titillium Web", sans-serif;
+  height: 100vh;
+}
+
+.character-box {
+  background-color: #eaaed89a;
+  border-radius: 5%;
+  margin-bottom: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  text-align: center;
+  transition: all 0.25s;
+  height: 373px;
+  width: 270px;
+}
+
+.character-box:hover {
+  background-color: #f6ffa6;
+}
+
+.character-box img:hover {
+  cursor: pointer;
+}
+
+.kick-box,
+.marry-box,
+.kiss-box {
+  background-color: #eaaed89a;
+  border: 1px solid maroon;
+  border-radius: 5%;
+  height: fit-content;
+  width: fit-content;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+#search-input {
+  height: 40px;
+  width: 30%;
+  border-radius: 25px;
+  border: none;
+}
+
+#search-input:focus {
+  outline: none;
+  border: 1px solid #9376e0;
+}
+
+#search-form button {
+  background-color: #e893cf;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.25s;
+}
+
+#search-form button:hover {
+  color: #9376e0;
+  background-color: #f6ffa6;
+  cursor: pointer;
+}
+
+#shows-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#shows-container .show-box {
+  background-color: #eaaed89a;
+  opacity: 95%;
+  border-radius: 5%;
+  margin-bottom: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+#shows-container .show-box:hover {
+  background-color: #f6ffa6;
+  cursor: pointer;
+}
+
+#kick-marry-kiss-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#kick-marry-kiss-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#kick-marry-kiss-container div img:hover {
+  cursor: pointer;
+}
